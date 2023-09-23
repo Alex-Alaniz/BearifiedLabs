@@ -1,18 +1,43 @@
 import type { AppProps } from "next/app";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
+import { useEffect } from 'react';
+import styles from '../styles/Home.module.css'; // <-- Import the styles here
 import "../styles/globals.css";
 
-// This is the chain your dApp will work on.
-// Change this to the chain your app is built for.
-// You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
 const activeChain = "ethereum";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  
+  useEffect(() => {
+    const navLinks = document.querySelectorAll('[data-target]');
+    
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(this: HTMLAnchorElement, e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('data-target');
+        const targetElement = document.getElementById(targetId!); // add ! to assert that targetId is not null
+        
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  }, []);
+
   return (
     <ThirdwebProvider
       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
       activeChain={activeChain}
     >
+      <nav className={styles.nav}>
+        <ul className={styles.menu}>
+          <li><a href="#hero" data-target="hero">Home</a></li>
+          <li><a href="#services" data-target="services">Services</a></li>
+          <li><a href="#projects" data-target="projects">Projects</a></li>
+          <li><a href="#team" data-target="team">Team</a></li>
+          <li><a href="#testimonials" data-target="testimonials">Testimonials</a></li>
+        </ul>
+      </nav>
       <Component {...pageProps} />
     </ThirdwebProvider>
   );

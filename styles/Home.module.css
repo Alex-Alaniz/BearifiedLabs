@@ -246,7 +246,7 @@
 }
 
 .serviceCard {
-  background-color: #131313;
+  background-color: #000000;
   border-radius: 10px;
   padding: 20px;
   width: 300px;
@@ -267,9 +267,17 @@
 }
 
 .serviceCard h3 {
-  font-size: 1.5rem;
+  text-decoration: none;
+  font-size: 1.3rem;
   color: #84309c;
 }
+
+.serviceCard h4 {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #84309c;
+}
+
 
 .serviceCard p {
   font-size: 1rem;

@@ -125,34 +125,34 @@ const Home: NextPage = () => {
           <h2>Our Services</h2>
           <div className={styles.serviceCardsContainer}>
             <div className={styles.serviceCard}>
-              <img src="path_to_icon_or_image" alt="Service Icon" className={styles.serviceIcon} />
+              <img src="/images/SmartContracts.png" alt="SmartContracts" className={styles.serviceIcon} />
               <h3>Custom Smart Contracts</h3>
-              <p>Service Description</p>
+              <p>Your contracts, Your Rules</p>
             </div>
             <div className={styles.serviceCard}>
-              <img src="path_to_icon_or_image" alt="Service Icon" className={styles.serviceIcon} />
+              <img src="/images/Mint.png" alt="Mint" className={styles.serviceIcon} />
               <h3>Minting Pipeline Design</h3>
-              <p>Service Description</p>
+              <p>Creating & distributing digital assets efficiently</p>
             </div>
             <div className={styles.serviceCard}>
-              <img src="path_to_icon_or_image" alt="Service Icon" className={styles.serviceIcon} />
+              <img src="/images/Block.png" alt="Blockchain" className={styles.serviceIcon} />
               <h3>Blockchain Development</h3>
-              <p>Service Description</p>
+              <p>Building decentralized applications</p>
             </div>
             <div className={styles.serviceCard}>
-              <img src="path_to_icon_or_image" alt="Service Icon" className={styles.serviceIcon} />
+              <img src="/images/search.png" alt="Search" className={styles.serviceIcon} />
               <h3>Promotional Microsites</h3>
-              <p>Service Description</p>
+              <p>Designed to showcase & promote</p>
             </div>
             <div className={styles.serviceCard}>
-              <img src="path_to_icon_or_image" alt="Service Icon" className={styles.serviceIcon} />
+              <img src="/images/pricing.png" alt="Pricing" className={styles.serviceIcon} />
               <h3>Drop & Pricing Strategy</h3>
-              <p>Service Description</p>
+              <p>Competitive pricing to maximize returns</p>
             </div>
             <div className={styles.serviceCard}>
-              <img src="path_to_icon_or_image" alt="Service Icon" className={styles.serviceIcon} />
+              <img src="/images/Startup.png" alt="Startup" className={styles.serviceIcon} />
               <h3>Launch Execution</h3>
-              <p>Service Description</p>
+              <p>Seamless and strategic rollouts</p>
             </div>
           </div>
         </section>

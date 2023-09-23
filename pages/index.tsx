@@ -1,5 +1,6 @@
 import { ConnectWallet } from "@thirdweb-dev/react";  
 import styles from "../styles/Home.module.css";
+import emblaStyles from "../styles/EmblaCarousel.module.css"; // Importing Embla styles
 import Image from "next/image";
 import { NextPage } from "next";
 import { EmblaCarouselComponent } from '../Components/EmblaCarouselComponent';
@@ -178,11 +179,13 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-{/* Projects Section */}
-<section className={styles.projects} id="projects">
-  <h2 className={styles.centeredText}>Our Projects</h2>
-  <EmblaCarouselComponent slides={slidesData} />
-</section>
+    {/* Projects Section */}
+    <section className={styles.projects} id="projects">
+      <h2 className={styles.centeredText}>Our Projects</h2>
+      <div className={emblaStyles.embla}>
+        <EmblaCarouselComponent slides={slidesData} />
+      </div>
+    </section>
 
         {/* Testimonials Section */}
         <section className={styles.testimonials} id="testimonials">

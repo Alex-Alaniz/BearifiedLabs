@@ -1,20 +1,25 @@
 .embla {
     overflow: hidden;
+    width: 100%;
   }
   
   .embla__container {
+    width: 69%;
     display: flex;
     will-change: transform;
+    gap: 10px; /* Adjust this value to reduce or increase the spacing */
   }
   
   .embla__slide {
+    margin: 0; /* This ensures there's no margin between slides */
     position: relative;
     flex: 0 0 auto;
-    width: 100%;
+    width: 300px; /* Adjust the percentage and pixel value as needed */
     height: 100%;
     min-width: 100%;
     user-select: none;
     cursor: pointer;
+    margin-right: 20px;
   }
   
   .embla__slide__inner {
@@ -34,4 +39,22 @@
     color: white;
     border-radius: 5px;
   }
+
+  .embla__slide--wider {
+    width: 900px;
+    flex: 0 0 calc(100% + 50px); /* Adjust the 50px to your desired width */
+  }
+  
+  .embla__slide:last-child {
+    height: auto;
+    padding-left: auto;
+    margin-right: 0;
+  }
+  
+  .embla__slide:nth-child(5) {
+    height: 600%; /* replace with your desired height value */
+    padding-left: 40; /* replace with your desired padding value */
+  }
+  
+  
   

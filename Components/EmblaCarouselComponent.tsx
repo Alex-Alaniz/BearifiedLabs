@@ -8,25 +8,17 @@ export const EmblaCarouselComponent = ({ slides }) => {
     loop: true,
     dragFree: true,
     align: 'center',
+    containScroll: true
   });
-  const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   const onSelect = () => {
     if (!emblaApi) return;
-    const activeIndex = emblaApi.selectedScrollSnap();
-    const nodes = emblaApi.slideNodes();
-    nodes.forEach((node, index) => {
-      if (index === activeIndex) {
-        node.style.opacity = "1";
-      } else {
-        node.style.opacity = "0.5";
-      }
-    });
+    setSelectedIndex(emblaApi.selectedScrollSnap());
   };
 
   useEffect(() => {
     if (emblaApi) {
-      setScrollSnaps(emblaApi.scrollSnapList());
       emblaApi.on("select", onSelect);
       onSelect();
     }
@@ -36,10 +28,32 @@ export const EmblaCarouselComponent = ({ slides }) => {
     <div className={styles.embla} ref={emblaRef}>
       <div className={styles.embla__container}>
         {slides.map((slide, index) => (
-          <div key={index} className={styles.embla__slide}>
+          <div 
+            key={index} 
+            className={`${styles.embla__slide} ${index === selectedIndex ? styles['embla__slide--selected'] : ''}`}
+          >
             <div className={styles.embla__slide__inner}>
               <a href={slide.link} target="_blank" rel="noopener noreferrer">
-                <Image src={slide.image} alt={slide.title} width={500} height={500} />
+                <Image 
+                  src={slide.imageUrl} 
+                  alt={slide.title} 
+                  width={
+                    index === 2 ? 600 :
+                    index === 1 ? 600 :
+                    index === 3 ? 900 : 
+                    index === 5 ? 500 : 
+                    500  // Default width
+                  }  
+                  height={
+                    index === 1 ? 600 :
+                    index === 2 ? 600 :
+                    index === 3 ? 550 :
+                    index === 0 ? 600 :
+                    index === 4 ? 600 : 
+                    index === 6 ? 550 : 
+                    500  // Default height
+                  }
+                />
               </a>
               <div className={styles.author}>{slide.title}</div>
             </div>

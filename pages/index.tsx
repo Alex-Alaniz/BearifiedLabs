@@ -7,18 +7,33 @@ import { EmblaCarouselComponent } from '../Components/EmblaCarouselComponent';
 
 const slidesData = [
   {
-    title: "Okay Bears Yacht Club",
-    imageUrl: "/images/OBYC.png",
+    title: "OBYC Labs (No Rug Studio)",
+    imageUrl: "/images/OBYCLabs.png",
     link: "https://obyclabs.com/"
+  },
+  {
+    title: "Okay Bears Yacht Club™",
+    imageUrl: "/images/OBYC.png",
+    link: "https://opensea.io/collection/okaybearsyachtclub"
+  },
+  {
+    title: "OBYC Hazmat Division",
+    imageUrl: "/images/OBYCHazmat.png",
+    link: "https://opensea.io/collection/obyc-hazmat-division"
   },
   {
     title: "Mutants vs Machines",
-    imageUrl: "/path_to_project_image2.png",
-    link: "https://obyclabs.com/"
+    imageUrl: "/images/MvM.png",
+    link: "https://opensea.io/collection/mutantsvsmachines"
+  },
+  {
+    title: "Jungle Bay",
+    imageUrl: "/images/JungleBay.png",
+    link: "https://junglebayisland.com/"
   },
   {
     title: "Project EVE",
-    imageUrl: "/path_to_project_image3.png",
+    imageUrl: "/images/EVE.png",
     link: "https://projecteve.io/"
   }
 ];
@@ -201,22 +216,57 @@ const Home: NextPage = () => {
         </section>
 
         {/* Team Section */}
-        <section className={styles.team} id="team">
-          <h2>Meet Our Team</h2>
-          <div className={styles.card}>
+<section className={styles.team} id="team">
+    <h2 className={styles.centeredText}>Our Team</h2>
+    <div className={styles.teamContainer}>
+        <div className={styles.card}>
             <div className={styles.teamImage}>
-              <Image
-                src="https://ipfs.io/ipfs/QmbpbVgkSyTvZFyNjHi5YNW8YuHXyWqha8pKJME7mf4xbF/New%20Alex%20Avatar.JPG"
-                alt="devAlex.ᴱᵀᴴ| ᵍᵐ"
-                width={150}
-                height={150}
-              />
+                <Image
+                    src="https://ipfs.io/ipfs/QmbpbVgkSyTvZFyNjHi5YNW8YuHXyWqha8pKJME7mf4xbF/New%20Alex%20Avatar.JPG"
+                    alt="devAlex.ᴱᵀᴴ| ᵍᵐ"
+                    width={150}
+                    height={150}
+                />
             </div>
             <h3>devAlex.ᴱᵀᴴ| ᵍᵐ</h3>
-            <p>Blockchain Engineer</p>
-            <a href="https://alexalaniz.com" target="_blank">Visit Website</a>
-          </div>
-        </section>
+            <p>Dev</p>
+            <a href="https://alexalaniz.com" target="_blank" rel="noopener noreferrer">Visit Website</a>
+        </div>
+    </div>
+
+    <div className={styles.teamContainer}>
+        <div className={styles.card}>
+            <div className={styles.teamImage}>
+                <Image
+                    src="/images/ImM0RTaL_DuKE.eth.png"
+                    alt="ImM0RTaL_DuKE.ᴱᵀᴴ"
+                    width={150}
+                    height={150}
+                />
+            </div>
+            <h3>ImM0RTaL_DuKE.ᴱᵀᴴ</h3>
+            <p>DIT - Dev in Training</p>
+            <a href="https://x.com/obycduke" target="_blank" rel="noopener noreferrer">Socials</a>
+        </div>
+    </div>
+
+    <div className={styles.teamContainer}>
+        <div className={styles.card}>
+            <div className={styles.teamImage}>
+                <Image
+                    src="/images/Wayt.png"
+                    alt="ImM0RTaL_DuKE.ᴱᵀᴴ"
+                    width={150}
+                    height={150}
+                />
+            </div>
+            <h3>WavyWayt.ᴱᵀᴴ</h3>
+            <p>Account Manager</p>
+            <a href="https://x.com/chasewayt" target="_blank" rel="noopener noreferrer">Socials</a>
+        </div>
+    </div>
+
+</section>
       </div>
     </main>
   );

@@ -2,9 +2,15 @@ import { ConnectWallet } from "@thirdweb-dev/react";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import { NextPage } from "next";
+import dynamic from 'next/dynamic';
+
+const EmblaCarouselComponent = dynamic(() => import('../components/EmblaCarouselComponent'), {
+  ssr: false,  // This will make the component only render on the client side.
+});
 
 const Home: NextPage = () => {
   return (
+
     <main className={styles.main}>
       <div className={styles.container}>
         {/* Navigation */}
@@ -46,7 +52,6 @@ const Home: NextPage = () => {
             <code className={styles.code}>Artist</code> & {""}
             <code className={styles.code}>Creators</code> 
             Step into the NFT universe with us. We navigate the intricate maze of smart contracts and provide a robust Web3 drop platform. You bring the creativity, we handle the code. When our worlds collide, expect digital fireworks.
-
           </p>
         </div>
 
@@ -158,22 +163,97 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        {/* Projects Section */}
-        <section className={styles.projects} id="projects">
-          <h2>Our Projects</h2>
-          <div className={styles.project}>
-            <a href="https://obyclabs.com/" target="_blank">Okay Bears Yacht Club</a>
-            <a href="https://opensea.io/collection/okaybearsyachtclub" target="_blank">View on OpenSea</a>
+
+{/* Projects Section */}
+<section className={styles.projects} id="projects">
+  <h2 className={styles.centeredText}>Our Projects</h2>
+  
+  <div className="embla">
+    {/* Okay Bears Yacht Club */}
+    <div className="embla__slide">
+      <div className="embla__slide__inner">
+        <a href="https://obyclabs.com/" target="_blank" rel="noopener noreferrer">
+          <div style={{display: 'block', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0}}>
+            <div style={{display: 'block', boxSizing: 'border-box', paddingTop: '123.12252964426878%'}}></div>
+            <noscript>
+              <img 
+                alt="Okay Bears Yacht Club" 
+                sizes="100vw" 
+                srcSet="/_next/image?url=/images/OBYC.png&w=640&q=75 640w, ...other resolutions..." 
+                src="/_next/image?url=/images/OBYC.png&w=3840&q=75" 
+                decoding="async" 
+                style={{position: 'absolute', top: 0, left: 0, bottom: 0, right: 0, boxSizing: 'border-box', padding: 0, border: 'none', margin: 'auto', display: 'block', width: 0, height: 0, minWidth: '100%', maxWidth: '100%', minHeight: '100%', maxHeight: '100%'}}
+              />
+            </noscript>
+            <img 
+              alt="Okay Bears Yacht Club" 
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+              decoding="async" 
+              style={{position: 'absolute', top: 0, left: 0, bottom: 0, right: 0, boxSizing: 'border-box', padding: 0, border: 'none', margin: 'auto', display: 'block', width: 0, height: 0, minWidth: '100%', maxWidth: '100%', minHeight: '100%', maxHeight: '100%'}}
+            />
           </div>
-          <div className={styles.project}>
-            <a href="https://obyclabs.com/" target="_blank">Mutants vs Machines</a>
-            <a href="https://opensea.io/collection/mutantsvsmachines" target="_blank">View on OpenSea</a>
+        </a>
+        <div className="author">Okay Bears Yacht Club</div>
+      </div>
+    </div>
+
+    {/* Mutants vs Machines */}
+    <div className="embla__slide">
+      <div className="embla__slide__inner">
+        <a href="https://obyclabs.com/" target="_blank" rel="noopener noreferrer">
+          <div style={{display: 'block', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0}}>
+            <div style={{display: 'block', boxSizing: 'border-box', paddingTop: '123.12252964426878%'}}></div>
+            <noscript>
+              <img 
+                alt="Mutants vs Machines" 
+                sizes="100vw" 
+                srcSet="/_next/image?url=/path_to_project_image2.png&w=640&q=75 640w, ...other resolutions..." 
+                src="/_next/image?url=/path_to_project_image2.png&w=3840&q=75" 
+                decoding="async" 
+                style={{position: 'absolute', top: 0, left: 0, bottom: 0, right: 0, boxSizing: 'border-box', padding: 0, border: 'none', margin: 'auto', display: 'block', width: 0, height: 0, minWidth: '100%', maxWidth: '100%', minHeight: '100%', maxHeight: '100%'}}
+              />
+            </noscript>
+            <img 
+              alt="Mutants vs Machines" 
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+              decoding="async" 
+              style={{position: 'absolute', top: 0, left: 0, bottom: 0, right: 0, boxSizing: 'border-box', padding: 0, border: 'none', margin: 'auto', display: 'block', width: 0, height: 0, minWidth: '100%', maxWidth: '100%', minHeight: '100%', maxHeight: '100%'}}
+            />
           </div>
-          <div className={styles.project}>
-            <a href="https://projecteve.io/" target="_blank">Project EVE</a>
-            <a href="https://opensea.io/ProjectEVE/created" target="_blank">View on OpenSea</a>
+        </a>
+        <div className="author">Mutants vs Machines</div>
+      </div>
+    </div>
+
+    {/* Project EVE */}
+    <div className="embla__slide">
+      <div className="embla__slide__inner">
+        <a href="https://projecteve.io/" target="_blank" rel="noopener noreferrer">
+          <div style={{display: 'block', overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0}}>
+            <div style={{display: 'block', boxSizing: 'border-box', paddingTop: '123.12252964426878%'}}></div>
+            <noscript>
+              <img 
+                alt="Project EVE" 
+                sizes="100vw" 
+                srcSet="/_next/image?url=/path_to_project_image3.png&w=640&q=75 640w, ...other resolutions..." 
+                src="/_next/image?url=/path_to_project_image3.png&w=3840&q=75" 
+                decoding="async" 
+                style={{position: 'absolute', top: 0, left: 0, bottom: 0, right: 0, boxSizing: 'border-box', padding: 0, border: 'none', margin: 'auto', display: 'block', width: 0, height: 0, minWidth: '100%', maxWidth: '100%', minHeight: '100%', maxHeight: '100%'}}
+              />
+            </noscript>
+            <img 
+              alt="Project EVE" 
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+              decoding="async" 
+              style={{position: 'absolute', top: 0, left: 0, bottom: 0, right: 0, boxSizing: 'border-box', padding: 0, border: 'none', margin: 'auto', display: 'block', width: 0, height: 0, minWidth: '100%', maxWidth: '100%', minHeight: '100%', maxHeight: '100%'}}
+            />
           </div>
-        </section>
+        </a>
+        <div className="author">Project EVE</div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* Testimonials Section */}
         <section className={styles.testimonials} id="testimonials">

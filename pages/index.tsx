@@ -9,7 +9,7 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         {/* Navigation */}
         <nav className={styles.nav}>
-          <div className={styles.logo}>Bearified Labs</div>
+          <nav className={styles.gradientText0}>Bearified Labs</nav>
           <ul className={styles.menu}>
             <li><a href="#hero">Home</a></li>
             <li><a href="#services">Services</a></li>
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Bearified™ Labs.
+                Bearified™ Labs
               </a>
             </span>
           </h1>
@@ -45,6 +45,8 @@ const Home: NextPage = () => {
             <code className={styles.code}>Developers</code>{" "}
             <code className={styles.code}>Artist</code> & {""}
             <code className={styles.code}>Creators</code> 
+            Step into the NFT universe with us. We navigate the intricate maze of smart contracts and provide a robust Web3 drop platform. You bring the creativity, we handle the code. When our worlds collide, expect digital fireworks.
+
           </p>
         </div>
 

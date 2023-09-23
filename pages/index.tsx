@@ -164,10 +164,10 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-{/* Projects Section */}
-<section className={styles.projects} id="projects">
-  <h2 className={styles.centeredText}>Our Projects</h2>
-  
+  {/* Projects Section */}
+  <section className={styles.projects} id="projects">
+    <h2 className={styles.centeredText}>Our Projects</h2>
+    
   <div className="embla">
     {/* Okay Bears Yacht Club */}
     <div className="embla__slide">

@@ -1,29 +1,22 @@
-// components/EmblaCarouselComponent.tsx
-
-import React, { useEffect, useState } from 'react';
-import EmblaCarousel from 'embla-carousel';
-
-const EmblaCarouselComponent: React.FC = () => {
-  const [emblaApi, setEmblaApi] = useState(null);
-
-  useEffect(() => {
-    const emblaNode = document.querySelector('.embla');
-    const options = { loop: false };
-    const embla = EmblaCarousel(emblaNode, options);
-    setEmblaApi(embla);
-  }, []);
-
-  useEffect(() => {
-    if (emblaApi) {
-      console.log(emblaApi.slideNodes()); // Access API
-    }
-  }, [emblaApi]);
+export const EmblaCarouselComponent = ({ slides }) => {
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    dragFree: true
+  });
 
   return (
     <div className="embla">
-      {/* Your carousel items go here */}
+      <div className="embla__viewport" ref={emblaRef}>
+        <div className="embla__container">
+          {slides.map((slide, index) => (
+            <div className="embla__slide" key={index}>
+              <div className="embla__slide__inner">
+                <img className="embla__slide__img" src={slide} alt={`Slide ${index + 1}`} />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
-
-export default EmblaCarouselComponent;

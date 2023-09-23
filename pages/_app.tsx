@@ -1,8 +1,10 @@
+import '../styles/embla.css';
 import type { AppProps } from "next/app";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { useEffect } from 'react';
 import styles from '../styles/Home.module.css'; // <-- Import the styles here
 import "../styles/globals.css";
+
 
 const activeChain = "ethereum";
 

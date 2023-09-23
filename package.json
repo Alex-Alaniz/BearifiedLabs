@@ -15,7 +15,7 @@
     "@thirdweb-dev/sdk": "^3",
     "@types/react-slick": "^0.23.10",
     "bs58": "^5.0.0",
-    "embla-carousel": "^8.0.0-rc14",
+    "embla-carousel": "4",
     "ethereum-cryptography": "^2.1.2",
     "ethers": "^5",
     "next": "^13",

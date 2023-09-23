@@ -136,4 +136,30 @@
       var(--brand-secondary)
     );
   }
+
+  .slideContent {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .slideContent h3 {
+    margin: 0;
+    color: #fff;
+  }
+  
+  .slideContent p {
+    margin: 10px 0;
+    color: #fff;
+  }
+  
+  .slideContent a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
   

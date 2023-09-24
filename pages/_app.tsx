@@ -2,9 +2,9 @@ import '../styles/embla.css';
 import type { AppProps } from "next/app";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { useEffect } from 'react';
-import styles from '../styles/Home.module.css'; // <-- Import the styles here
+import styles from '../styles/Home.module.css';
 import "../styles/globals.css";
-
+import Footer from '../Components/Footer'; // Import the Footer component
 
 const activeChain = "ethereum";
 
@@ -41,6 +41,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         </ul>
       </nav>
       <Component {...pageProps} />
+      <Footer /> {/* Add the Footer component here */}
     </ThirdwebProvider>
   );
 }

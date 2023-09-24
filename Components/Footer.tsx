@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerLeft}>
-        <img src="/path-to-your-logo.png" alt="Logo" className={styles.logo} />
-        <p>Your Company Description</p>
+      <nav className={styles.gradientText0}>Bearified XYZ</nav>
+        <p>A web3 Agency</p>
       </div>
       <div className={styles.footerCenter}>
         <ul>

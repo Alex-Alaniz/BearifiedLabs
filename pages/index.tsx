@@ -45,7 +45,7 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         {/* Navigation */}
         <nav className={styles.nav}>
-          <nav className={styles.gradientText0}>Bearified Labs</nav>
+          <nav className={styles.gradientText0}>Bearified XYZyou think that</nav>
           <ul className={styles.menu}>
             <li><a href="#hero">Home</a></li>
             <li><a href="#services">Services</a></li>

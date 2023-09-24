@@ -1,7 +1,9 @@
 .embla {
-    overflow: hidden;
-    width: 100%;
-  }
+  width: 115%; /* Set the width to 100% of the viewport width */
+  overflow: hidden; /* Hide any overflow */
+  position: relative; /* Ensure it's relative for positioning child elements */
+}
+
   
   .embla__container {
     width: 69%;
@@ -55,6 +57,34 @@
     height: 600%; /* replace with your desired height value */
     padding-left: 40; /* replace with your desired padding value */
   }
+
+  .embla__button_prev,
+.embla__button_next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFFFFF; /* White arrow color */
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent black background */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px; /* Adjust the size of the arrow icon */
+    z-index: 10; /* Ensure the arrows are above the slides */
+}
+
+.embla__button_prev {
+    left: 10px; /* Position from the left side of the carousel */
+}
+
+.embla__button_next {
+    right: 10px; /* Position from the right side of the carousel */
+}
+
+.embla__button_prev:hover,
+.embla__button_next:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
   
   
   

@@ -250,6 +250,23 @@ const Home: NextPage = () => {
         </div>
     </div>
 
+
+    <div className={styles.teamContainer}>
+        <div className={styles.card}>
+            <div className={styles.teamImage}>
+                <Image
+                    src="/images/ImM0RTaL_DuKE.eth.png"
+                    alt="ImM0RTaL_DuKE.ᴱᵀᴴ"
+                    width={150}
+                    height={150}
+                />
+            </div>
+            <h3>ImM0RTaL_DuKE.ᴱᵀᴴ</h3>
+            <p>DIT - Dev in Training</p>
+            <a href="https://x.com/obycduke" target="_blank" rel="noopener noreferrer">Socials</a>
+        </div>
+    </div>
+
     <div className={styles.teamContainer}>
         <div className={styles.card}>
             <div className={styles.teamImage}>

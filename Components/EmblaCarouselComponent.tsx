@@ -11,10 +11,22 @@ export const EmblaCarouselComponent = ({ slides }) => {
     containScroll: true
   });
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
+  const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
 
   const onSelect = () => {
     if (!emblaApi) return;
     setSelectedIndex(emblaApi.selectedScrollSnap());
+    setPrevBtnEnabled(emblaApi.canScrollPrev());
+    setNextBtnEnabled(emblaApi.canScrollNext());
+  };
+
+  const scrollPrev = () => {
+    if (emblaApi) emblaApi.scrollPrev();
+  };
+
+  const scrollNext = () => {
+    if (emblaApi) emblaApi.scrollNext();
   };
 
   useEffect(() => {
@@ -60,6 +72,14 @@ export const EmblaCarouselComponent = ({ slides }) => {
           </div>
         ))}
       </div>
+      <button className={`${styles.embla__button} ${styles.embla__button_prev}`} onClick={scrollPrev} disabled={!prevBtnEnabled}>
+        <Image src="/images/left-alignment.png" alt="Previous" width={24} height={24} />
+      </button>
+      <button className={`${styles.embla__button} ${styles.embla__button_next}`} onClick={scrollNext} disabled={!nextBtnEnabled}>
+        <Image src="/images/right.png" alt="Next" width={24} height={24} />
+      </button>
     </div>
   );
 };
+
+export default EmblaCarouselComponent;

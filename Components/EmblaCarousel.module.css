@@ -1,0 +1,90 @@
+.embla {
+  width: 115%; /* Set the width to 100% of the viewport width */
+  overflow: hidden; /* Hide any overflow */
+  position: relative; /* Ensure it's relative for positioning child elements */
+}
+
+  
+  .embla__container {
+    width: 69%;
+    display: flex;
+    will-change: transform;
+    gap: 10px; /* Adjust this value to reduce or increase the spacing */
+  }
+  
+  .embla__slide {
+    margin: 0; /* This ensures there's no margin between slides */
+    position: relative;
+    flex: 0 0 auto;
+    width: 300px; /* Adjust the percentage and pixel value as needed */
+    height: 100%;
+    min-width: 100%;
+    user-select: none;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .embla__slide__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .author {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .embla__slide--wider {
+    width: 900px;
+    flex: 0 0 calc(100% + 50px); /* Adjust the 50px to your desired width */
+  }
+  
+  .embla__slide:last-child {
+    height: auto;
+    padding-left: auto;
+    margin-right: 0;
+  }
+  
+  .embla__slide:nth-child(5) {
+    height: 600%; /* replace with your desired height value */
+    padding-left: 40; /* replace with your desired padding value */
+  }
+
+  .embla__button_prev,
+.embla__button_next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFFFFF; /* White arrow color */
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent black background */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px; /* Adjust the size of the arrow icon */
+    z-index: 10; /* Ensure the arrows are above the slides */
+}
+
+.embla__button_prev {
+    left: 10px; /* Position from the left side of the carousel */
+}
+
+.embla__button_next {
+    right: 10px; /* Position from the right side of the carousel */
+}
+
+.embla__button_prev:hover,
+.embla__button_next:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+  
+  
+  

@@ -210,7 +210,7 @@ const Home: NextPage = () => {
             <cite>- Satisfied Client</cite>
           </blockquote>
           <blockquote>
-          &apos;Their team was professional, knowledgeable, and went above and beyond to ensure our project's success.&apos;
+          &apos;Their team was professional, knowledgeable, and went above and beyond to ensure our project&apos;s success.&apos;
             <cite>- Happy Partner</cite>
           </blockquote>
         </section>

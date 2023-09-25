@@ -162,32 +162,32 @@ const Home: NextPage = () => {
           <h2>Our Services</h2>
           <div className={styles.serviceCardsContainer}>
             <div className={styles.serviceCard}>
-              <img src="/images/SmartContracts.png" alt="SmartContracts" className={styles.serviceIcon} />
+              <Image src="/images/SmartContracts.png" alt="SmartContracts" width={100} height={100} className={styles.serviceIcon} />
               <h3>Custom Smart Contracts</h3>
               <p>Your contracts, Your Rules</p>
             </div>
             <div className={styles.serviceCard}>
-              <img src="/images/Mint.png" alt="Mint" className={styles.serviceIcon} />
+              <Image src="/images/Mint.png" alt="Mint" width={100} height={100} className={styles.serviceIcon} />
               <h3>Minting Pipeline Design</h3>
               <p>Creating & distributing digital assets efficiently</p>
             </div>
             <div className={styles.serviceCard}>
-              <img src="/images/Block.png" alt="Blockchain" className={styles.serviceIcon} />
+              <Image src="/images/Block.png" alt="Blockchain" width={100} height={100} className={styles.serviceIcon} />
               <h3>Blockchain Development</h3>
               <p>Building decentralized applications</p>
             </div>
             <div className={styles.serviceCard}>
-              <img src="/images/search.png" alt="Search" className={styles.serviceIcon} />
+              <Image src="/images/search.png" alt="Search" width={100} height={100} className={styles.serviceIcon} />
               <h3>Promotional Microsites</h3>
               <p>Designed to showcase & promote</p>
             </div>
             <div className={styles.serviceCard}>
-              <img src="/images/pricing.png" alt="Pricing" className={styles.serviceIcon} />
+              <Image src="/images/pricing.png" alt="Pricing" width={100} height={100} className={styles.serviceIcon} />
               <h3>Drop & Pricing Strategy</h3>
               <p>Competitive pricing to maximize returns</p>
             </div>
             <div className={styles.serviceCard}>
-              <img src="/images/Startup.png" alt="Startup" className={styles.serviceIcon} />
+              <Image src="/images/Startup.png" alt="Startup" width={100} height={100} className={styles.serviceIcon} />
               <h3>Launch Execution</h3>
               <p>Seamless and strategic rollouts</p>
             </div>
@@ -206,11 +206,11 @@ const Home: NextPage = () => {
         <section className={styles.testimonials} id="testimonials">
           <h2>What Our Clients Say</h2>
           <blockquote>
-            "Bearified Labs provided exceptional service and expertise for our blockchain project. Highly recommended!"
+            &quot;Bearified Labs provided exceptional service and expertise for our blockchain project. Highly recommended!&quot;
             <cite>- Satisfied Client</cite>
           </blockquote>
           <blockquote>
-            "Their team was professional, knowledgeable, and went above and beyond to ensure our project's success."
+            &quot;Their team was professional, knowledgeable, and went above and beyond to ensure our project's success.&quot;
             <cite>- Happy Partner</cite>
           </blockquote>
         </section>

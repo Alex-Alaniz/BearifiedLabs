@@ -27,11 +27,8 @@
 }
 
 .embla__slide__inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  box-sizing: border-box;
+  width: 300px; /* Adjust this value to control the card width */
+  margin: 0 auto; /* Center the card */
 }
 
 .author {
@@ -89,14 +86,78 @@
 
 @media screen and (min-width: 768px) {
   .embla__slide {
-    width: calc(100% / 3);
-    margin-right: -50px;
+    width: calc(100% / 3); /* Display 3 slides on desktop */
+    flex: 0 0 calc(100% / 3);
   }
 }
 
 @media screen and (max-width: 767px) {
   .embla__slide {
-    width: 50%;
+    width: 100%; /* Display 1 slide on mobile */
+    flex: 0 0 100%;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Adjust this to control the card width */
+  height: 80%; /* Adjust this to control the card height */
+  box-sizing: border-box;
+  overflow: hidden; /* Hide overflow to ensure image fits within the card */
+}
+
+.card img {
+  width: 100%; /* Image takes full width of the card */
+  height: auto; /* Maintain image aspect ratio */
+  object-fit: cover; /* Image will cover the entire space without distortion */
+  display: block;
+}
+
+.card .details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card .author {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.card .description {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+/* For desktop screens */
+@media screen and (min-width: 768px) {
+  .embla__slide {
+    width: calc(100% / 3); /* Display 3 slides on desktop */
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 767px) {
+  .embla__slide {
+    width: 100%; /* Display 1 slide on mobile */
     margin-right: 0;
   }
+}
+
+.slideDescription {
+  text-align: center;
+  margin-top: 10px; /* Adjust as needed */
+  font-size: 16px; /* Adjust as needed */
+  /* Add any other desired styles for the title or description */
 }

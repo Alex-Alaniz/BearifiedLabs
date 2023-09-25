@@ -45,29 +45,21 @@ export const EmblaCarouselComponent = ({ slides }) => {
             className={`${styles.embla__slide} ${index === selectedIndex ? styles['embla__slide--selected'] : ''}`}
           >
             <div className={styles.embla__slide__inner}>
-              <a href={slide.link} target="_blank" rel="noopener noreferrer">
-                <Image 
-                  src={slide.imageUrl} 
-                  alt={slide.title} 
-                  width={
-                    index === 2 ? 600 :
-                    index === 1 ? 600 :
-                    index === 3 ? 900 : 
-                    index === 5 ? 500 : 
-                    500  // Default width
-                  }  
-                  height={
-                    index === 1 ? 600 :
-                    index === 2 ? 600 :
-                    index === 3 ? 550 :
-                    index === 0 ? 600 :
-                    index === 4 ? 600 : 
-                    index === 6 ? 550 : 
-                    500  // Default height
-                  }
-                />
-              </a>
-              <div className={styles.author}>{slide.title}</div>
+              <div className="card">
+                <a href={slide.link} target="_blank" rel="noopener noreferrer">
+                  <Image 
+                    src={slide.imageUrl} 
+                    alt={slide.title} 
+                    width={500}  // Adjust width as needed
+                    height={500} // Adjust height as needed
+                    layout="responsive"
+                  />
+                </a>
+                <div className="details">
+                  <div className={styles.author}>{slide.title}</div>
+                  <div className="description">Project description here</div>
+                </div>
+              </div>
             </div>
           </div>
         ))}

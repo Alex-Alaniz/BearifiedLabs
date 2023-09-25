@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useEmblaCarousel } from 'embla-carousel/react';
 import Image from 'next/image';
-import styles from '../components/EmblaCarousel.module.css';
+import styles from './EmblaCarousel.module.css';
 
 type Slide = {
   title: string;

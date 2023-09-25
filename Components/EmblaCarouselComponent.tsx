@@ -3,7 +3,18 @@ import { useEmblaCarousel } from 'embla-carousel/react';
 import Image from 'next/image';
 import styles from '../components/EmblaCarousel.module.css';
 
-export const EmblaCarouselComponent = ({ slides }) => {
+type Slide = {
+  title: string;
+  imageUrl: string;
+  link: string;
+  description?: string; // I've added this assuming each slide might have a description. Remove if not needed.
+};
+
+type EmblaCarouselProps = {
+  slides: Slide[];
+};
+
+export const EmblaCarouselComponent: React.FC<EmblaCarouselProps> = ({ slides }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     dragFree: true,

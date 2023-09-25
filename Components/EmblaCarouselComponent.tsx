@@ -7,7 +7,7 @@ export const EmblaCarouselComponent = ({ slides }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     dragFree: true,
-    align: 'center',
+    align: 'start',
     containScroll: true
   });
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -55,10 +55,10 @@ export const EmblaCarouselComponent = ({ slides }) => {
                     layout="responsive"
                   />
                 </a>
-                <div className="details">
-                  <div className={styles.author}>{slide.title}</div>
-                  <div className="description">Project description here</div>
-                </div>
+              </div>
+              <div className="details">
+                <div className={styles.author}>{slide.title}</div>
+                <div className="description">{slide.description}</div>
               </div>
             </div>
           </div>

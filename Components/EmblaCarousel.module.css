@@ -1,18 +1,15 @@
 .embla {
-  width: 115%;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
 
 .embla__container {
+  padding: 0;
   width: 100%;
   display: flex;
   will-change: transform;
   gap: 10px;
-}
-
-.embla__slide:not(:last-child) {
-  margin-right: 20px;
 }
 
 .embla__slide {
@@ -32,29 +29,16 @@
 }
 
 .author {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5px 10px;
   color: white;
   border-radius: 5px;
+  text-align: center;
 }
 
 .embla__slide--wider {
   width: 900px;
   flex: 0 0 calc(100% + 50px);
-}
-
-.embla__slide:last-child {
-  height: auto;
-  padding-left: auto;
-  margin-right: 0;
-}
-
-.embla__slide:nth-child(5) {
-  height: 600%;
-  padding-left: 40;
 }
 
 .embla__button_prev,
@@ -86,37 +70,40 @@
 
 @media screen and (min-width: 768px) {
   .embla__slide {
-    width: calc(100% / 3); /* Display 3 slides on desktop */
-    flex: 0 0 calc(100% / 3);
+    width: calc(33.33% - 10px); /* Display 3 slides on desktop, minus the gap */
+    flex: 0 0 calc(33.33% - 10px);
+    margin-right: -69%;
+    margin-left: auto;
   }
 }
 
-@media screen and (max-width: 767px) {
+@@media screen and (max-width: 767px) {
   .embla__slide {
     width: 100%; /* Display 1 slide on mobile */
     flex: 0 0 100%;
   }
 }
+
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center content vertically */
+  justify-content: center;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 10px;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 90%; /* Adjust this to control the card width */
-  height: 80%; /* Adjust this to control the card height */
+  width: 90%;
+  height: 80%;
   box-sizing: border-box;
-  overflow: hidden; /* Hide overflow to ensure image fits within the card */
+  overflow: hidden;
 }
 
 .card img {
-  width: 100%; /* Image takes full width of the card */
-  height: auto; /* Maintain image aspect ratio */
-  object-fit: cover; /* Image will cover the entire space without distortion */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   display: block;
 }
 
@@ -128,36 +115,14 @@
   margin-top: 10px;
 }
 
-.card .author {
-  text-align: center;
-  margin-bottom: 5px;
-}
-
 .card .description {
   text-align: center;
   font-size: 14px;
   color: #777;
 }
 
-/* For desktop screens */
-@media screen and (min-width: 768px) {
-  .embla__slide {
-    width: calc(100% / 3); /* Display 3 slides on desktop */
-    margin-right: 10px; /* Adjust the margin as needed */
-  }
-}
-
-/* For mobile screens */
-@media screen and (max-width: 767px) {
-  .embla__slide {
-    width: 100%; /* Display 1 slide on mobile */
-    margin-right: 0;
-  }
-}
-
 .slideDescription {
   text-align: center;
-  margin-top: 10px; /* Adjust as needed */
-  font-size: 16px; /* Adjust as needed */
-  /* Add any other desired styles for the title or description */
+  margin-top: 10px;
+  font-size: 16px;
 }

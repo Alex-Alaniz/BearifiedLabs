@@ -206,11 +206,11 @@ const Home: NextPage = () => {
         <section className={styles.testimonials} id="testimonials">
           <h2>What Our Clients Say</h2>
           <blockquote>
-            &quot;Bearified Labs provided exceptional service and expertise for our blockchain project. Highly recommended!&quot;
+          &apos;Bearified Labs provided exceptional service and expertise for our blockchain project. Highly recommended!&apos;
             <cite>- Satisfied Client</cite>
           </blockquote>
           <blockquote>
-            &quot;Their team was professional, knowledgeable, and went above and beyond to ensure our project's success.&quot;
+          &apos;Their team was professional, knowledgeable, and went above and beyond to ensure our project's success.&apos;
             <cite>- Happy Partner</cite>
           </blockquote>
         </section>

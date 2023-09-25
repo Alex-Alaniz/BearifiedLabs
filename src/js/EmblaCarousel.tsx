@@ -68,7 +68,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               <div className="embla__slide__number">
                 <span>{index + 1}</span>
               </div>
-              <img
+              <Image />
                 className="embla__slide__img"
                 src={imageByIndex(index)}
                 alt="Your alt text"

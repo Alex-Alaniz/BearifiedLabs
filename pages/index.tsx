@@ -172,7 +172,7 @@ const Home: NextPage = () => {
               <p>Creating & distributing digital assets efficiently</p>
             </div>
             <div className={styles.serviceCard}>
-              <Image src="/images/Block.png" alt="Blockchain" width={100} height={100} className={styles.serviceIcon} />
+              <Image src="/images/block.png" alt="Blockchain" width={100} height={100} className={styles.serviceIcon} />
               <h3>Blockchain Development</h3>
               <p>Building decentralized applications</p>
             </div>
@@ -187,7 +187,7 @@ const Home: NextPage = () => {
               <p>Competitive pricing to maximize returns</p>
             </div>
             <div className={styles.serviceCard}>
-              <Image src="/images/Startup.png" alt="Startup" width={100} height={100} className={styles.serviceIcon} />
+              <Image src="/images/startup.png" alt="Startup" width={100} height={100} className={styles.serviceIcon} />
               <h3>Launch Execution</h3>
               <p>Seamless and strategic rollouts</p>
             </div>

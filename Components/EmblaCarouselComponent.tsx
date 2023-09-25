@@ -8,7 +8,6 @@ export const EmblaCarouselComponent = ({ slides }) => {
     loop: true,
     dragFree: true,
     align: 'start',
-    containScroll: true
   });
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);

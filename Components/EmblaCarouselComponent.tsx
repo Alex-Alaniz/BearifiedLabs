@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useEmblaCarousel } from 'embla-carousel/react';
 import Image from 'next/image';
-import styles from '../styles/EmblaCarousel.module.css';
+import styles from '../components/EmblaCarousel.module.css';
 
 export const EmblaCarouselComponent = ({ slides }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({

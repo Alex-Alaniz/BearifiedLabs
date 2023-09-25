@@ -1,6 +1,6 @@
 import { ConnectWallet } from "@thirdweb-dev/react";  
 import styles from "../styles/Home.module.css";
-import emblaStyles from "../styles/EmblaCarousel.module.css"; // Importing Embla styles
+import emblaStyles from "../components/EmblaCarousel.module.css"; // Importing Embla styles
 import Image from "next/image";
 import { NextPage } from "next";
 import { EmblaCarouselComponent } from '../Components/EmblaCarouselComponent';
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         {/* Navigation */}
         <nav className={styles.nav}>
-          <nav className={styles.gradientText0}>Bearified XYZyou think that</nav>
+          <nav className={styles.gradientText0}>Bearified XYZ</nav>
           <ul className={styles.menu}>
             <li><a href="#hero">Home</a></li>
             <li><a href="#services">Services</a></li>

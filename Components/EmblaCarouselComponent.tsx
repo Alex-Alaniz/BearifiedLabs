@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useEmblaCarousel } from 'embla-carousel/react';
 import Image from 'next/image';
 import styles from './EmblaCarousel.module.css';
@@ -23,6 +23,7 @@ export const EmblaCarouselComponent: React.FC<EmblaCarouselProps> = ({ slides })
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
   const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
+  const mouseDownTimeRef = useRef<number | null>(null);
 
   const onSelect = () => {
     if (!emblaApi) return;
@@ -39,9 +40,14 @@ export const EmblaCarouselComponent: React.FC<EmblaCarouselProps> = ({ slides })
     if (emblaApi) emblaApi.scrollNext();
   };
 
+  const handleMouseDown = () => {
+    mouseDownTimeRef.current = Date.now();
+  };
+
   const handleSlideClick = (e: React.MouseEvent, link: string) => {
     e.preventDefault();
-    if (emblaApi && emblaApi.clickAllowed()) {
+    const clickDuration = Date.now() - (mouseDownTimeRef.current || 0);
+    if (emblaApi && (emblaApi.clickAllowed() || clickDuration < 200)) {
       window.open(link, '_blank', 'noopener,noreferrer');
     }
   };
@@ -60,6 +66,7 @@ export const EmblaCarouselComponent: React.FC<EmblaCarouselProps> = ({ slides })
           <div 
             key={index} 
             className={`${styles.embla__slide} ${index === selectedIndex ? styles['embla__slide--selected'] : ''}`}
+            onMouseDown={handleMouseDown}
           >
             <div className={styles.embla__slide__inner}>
               <a 

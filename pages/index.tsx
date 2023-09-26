@@ -7,6 +7,11 @@ import { EmblaCarouselComponent } from '../Components/EmblaCarouselComponent';
 
 const slidesData = [
   {
+    title: "BearifiedCo",
+    imageUrl: "/images/bearifiedco.png",
+    link: "https://Bearified.co/"
+  },
+  {
     title: "OBYC Labs (No Rug Studio)",
     imageUrl: "/images/OBYCLabs.png",
     link: "https://obyclabs.com/"

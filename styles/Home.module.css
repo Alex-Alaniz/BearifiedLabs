@@ -1,7 +1,6 @@
 @import "~slick-carousel/slick/slick.css"; 
 @import "~slick-carousel/slick/slick-theme.css";
 
-
 /* Navigation */
 .nav {
   display: flex;
@@ -9,11 +8,11 @@
   align-items: center;
   padding: 1rem 5%;
   background-color: #070707;
-  position: fixed; /* This will make the navigation bar fixed */
-  top: 0; /* Position it at the top */
-  left: 0; /* Position it at the left */
-  width: 100%; /* Make it span the full width of the viewport */
-  z-index: 1000; /* Ensure it's above other elements */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav .logo {
@@ -38,6 +37,34 @@
 
 .menu li a:hover {
   background-color: #84309c;
+}
+
+/* Add styles for the hamburger menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* Hide the menu items on mobile */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #070707;
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
 
 /* Container */
@@ -218,6 +245,70 @@
   gap: 10px;
 }
 
+/* Adjustments for iPad Air and iPad Mini */
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .description {
+    font-size: 1.2rem;
+  }
+  .card {
+    padding: 10px;
+  }
+  .serviceCard {
+    width: 250px;
+  }
+}
+
+/* Adjustments for Galaxy Fold */
+@media screen and (max-width: 540px) {
+  .title {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .card {
+    padding: 5px;
+  }
+  .serviceCard {
+    width: 220px;
+  }
+}
+
+/* Adjustments for Surface Pro 7 in portrait */
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .description {
+    font-size: 1.2rem;
+  }
+  .card {
+    padding: 10px;
+  }
+  .serviceCard {
+    width: 250px;
+  }
+}
+
+/* Adjustments for Surface Pro 7 in landscape */
+@media screen and (max-width: 1366px) and (orientation: landscape) {
+  .title {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1.3rem;
+  }
+  .card {
+    padding: 15px;
+  }
+  .serviceCard {
+    width: 280px;
+  }
+}
+
 .hero {
   padding-top: 70px; /* Adjust this value based on the actual height of your navigation bar */
   /* ... other styles ... */
@@ -281,7 +372,6 @@
   font-size: 1.3rem;
   color: #84309c;
 }
-
 
 .serviceCard p {
   font-size: 1rem;
@@ -389,7 +479,6 @@
   gap: 20px; /* Space between team members */
 }
 
-
 .card:hover {
   transform: translateY(-10px);
 }
@@ -404,4 +493,3 @@
   text-align: center;
   margin-bottom: 30px;
 }
-

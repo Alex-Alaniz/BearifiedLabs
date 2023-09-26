@@ -2,6 +2,7 @@
   "name": "next-typescript-starter",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,6 +15,7 @@
     "@thirdweb-dev/react": "^3",
     "@thirdweb-dev/sdk": "^3",
     "@types/react-slick": "^0.23.10",
+    "all": "^0.0.0",
     "bs58": "^5.0.0",
     "embla-carousel": "4",
     "ethereum-cryptography": "^2.1.2",

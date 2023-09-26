@@ -1,4 +1,3 @@
-import '../styles/embla.css';
 import type { AppProps } from "next/app";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { useEffect } from 'react';

@@ -7,7 +7,7 @@ type Slide = {
   title: string;
   imageUrl: string;
   link: string;
-  description?: string; // I've added this assuming each slide might have a description. Remove if not needed.
+  description?: string;
 };
 
 type EmblaCarouselProps = {
@@ -17,7 +17,7 @@ type EmblaCarouselProps = {
 export const EmblaCarouselComponent: React.FC<EmblaCarouselProps> = ({ slides }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
-    dragFree: true,
+    dragFree: false,
     align: 'start',
   });
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -39,6 +39,13 @@ export const EmblaCarouselComponent: React.FC<EmblaCarouselProps> = ({ slides })
     if (emblaApi) emblaApi.scrollNext();
   };
 
+  const handleSlideClick = (e: React.MouseEvent, link: string) => {
+    e.preventDefault();
+    if (emblaApi && emblaApi.clickAllowed()) {
+      window.open(link, '_blank', 'noopener,noreferrer');
+    }
+  };
+
   useEffect(() => {
     if (emblaApi) {
       emblaApi.on("select", onSelect);
@@ -55,14 +62,20 @@ export const EmblaCarouselComponent: React.FC<EmblaCarouselProps> = ({ slides })
             className={`${styles.embla__slide} ${index === selectedIndex ? styles['embla__slide--selected'] : ''}`}
           >
             <div className={styles.embla__slide__inner}>
-              <a href={slide.link} target="_blank" rel="noopener noreferrer" className={styles.fullCardLink}>
+              <a 
+                href={slide.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={styles.fullCardLink}
+                onClick={(e) => handleSlideClick(e, slide.link)}
+              >
                 <div className={styles.projectCard}>
                   <div className={styles.projectImage}>
                     <Image 
                       src={slide.imageUrl} 
                       alt={slide.title} 
-                      width={500}  // Adjust width as needed
-                      height={500} // Adjust height as needed
+                      width={500}
+                      height={500}
                       layout="responsive"
                     />
                   </div>
@@ -83,8 +96,7 @@ export const EmblaCarouselComponent: React.FC<EmblaCarouselProps> = ({ slides })
         <Image src="/images/right.png" alt="Next" width={24} height={24} />
       </button>
     </div>
-);
-
+  );
 };
 
 export default EmblaCarouselComponent;

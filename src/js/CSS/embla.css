@@ -37,7 +37,7 @@
     line-height: 4.6rem;
     font-weight: 900;
     text-align: center;
-    pointer-events: none;
+    pointer-events: auto;
   }
   .embla__slide__number > span {
     color: var(--brand-primary);

@@ -419,29 +419,6 @@
   color: #fff; /* Adjust color as needed */
 }
 
-.projectCard {
-  width: 100%; /* Take the full width of the carousel slide */
-  margin: 0 10px; /* Add horizontal margin for spacing between cards */
-  height: 400px; /* Adjust this value to control the height of the card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-  border-radius: 10px; /* Rounds the corners */
-  overflow: hidden; /* Ensures the image stays within the card boundaries */
-  position: relative; /* Allows us to position the image absolutely within the card */
-}
-
-.projectCard img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire card */
-}
-
-.projectCard:hover {
-  transform: scale(1.05);
-}
-
 .centeredText {
   text-align: center;
   width: 100%;

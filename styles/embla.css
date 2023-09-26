@@ -58,7 +58,6 @@
     bottom: 0;
   }
   .embla__button {
-    -webkit-appearance: none;
     background-color: transparent;
     touch-action: manipulation;
     display: inline-flex;
@@ -94,7 +93,6 @@
     height: 65%;
   }
   .embla__dot {
-    -webkit-appearance: none;
     background-color: transparent;
     touch-action: manipulation;
     display: inline-flex;

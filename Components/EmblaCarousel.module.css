@@ -126,3 +126,36 @@
   margin-top: 10px;
   font-size: 16px;
 }
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden; /* Ensures the image and content stay within the card boundaries */
+  background-color: #000000; /* Or any preferred background color */
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+}

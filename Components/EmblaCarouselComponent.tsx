@@ -55,8 +55,8 @@ export const EmblaCarouselComponent: React.FC<EmblaCarouselProps> = ({ slides })
             className={`${styles.embla__slide} ${index === selectedIndex ? styles['embla__slide--selected'] : ''}`}
           >
             <div className={styles.embla__slide__inner}>
-              <div className={styles.projectCard}>
-                <a href={slide.link} target="_blank" rel="noopener noreferrer">
+              <a href={slide.link} target="_blank" rel="noopener noreferrer" className={styles.fullCardLink}>
+                <div className={styles.projectCard}>
                   <div className={styles.projectImage}>
                     <Image 
                       src={slide.imageUrl} 
@@ -66,16 +66,15 @@ export const EmblaCarouselComponent: React.FC<EmblaCarouselProps> = ({ slides })
                       layout="responsive"
                     />
                   </div>
-                </a>
-                <div className={styles.projectDetails}>
-                  <div className={styles.author}>{slide.title}</div>
-                  <div className="description">{slide.description}</div>
+                  <div className={styles.projectDetails}>
+                    <div className={styles.author}>{slide.title}</div>
+                    <div className="description">{slide.description}</div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         ))}
-
       </div>
       <button className={`${styles.embla__button} ${styles.embla__button_prev}`} onClick={scrollPrev} disabled={!prevBtnEnabled}>
         <Image src="/images/left-alignment.png" alt="Previous" width={24} height={24} />
@@ -84,7 +83,8 @@ export const EmblaCarouselComponent: React.FC<EmblaCarouselProps> = ({ slides })
         <Image src="/images/right.png" alt="Next" width={24} height={24} />
       </button>
     </div>
-  );
+);
+
 };
 
 export default EmblaCarouselComponent;

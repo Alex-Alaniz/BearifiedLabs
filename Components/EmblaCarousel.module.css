@@ -144,6 +144,19 @@
   transform: translateY(-10px);
 }
 
+.projectCard:active {
+  transform: translateY(-5px);
+  background-color: rgba(0, 0, 0, 0.9); /* Slightly darker background on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on click */
+}
+
+.fullCardLink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
 .projectImage {
   width: 100%;
   height: auto;

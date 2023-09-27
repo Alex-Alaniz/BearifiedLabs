@@ -3,6 +3,44 @@ import { useEmblaCarousel } from 'embla-carousel/react';
 import Image from 'next/image';
 import styles from './EmblaCarousel.module.css';
 
+const slidesData = [
+  {
+    title: "BearifiedCo",
+    imageUrl: "/images/bearifiedco.png",
+    link: "https://Bearified.co/"
+  },
+  {
+    title: "OBYC Labs (No Rug Studio)",
+    imageUrl: "/images/OBYCLabs.png",
+    link: "https://obyclabs.com/"
+  },
+  {
+    title: "Okay Bears Yacht Club™",
+    imageUrl: "/images/OBYC.png",
+    link: "https://opensea.io/collection/okaybearsyachtclub"
+  },
+  {
+    title: "OBYC Hazmat Division",
+    imageUrl: "/images/OBYCHazmat.png",
+    link: "https://opensea.io/collection/obyc-hazmat-division"
+  },
+  {
+    title: "Mutants vs Machines",
+    imageUrl: "/images/MvM.png",
+    link: "https://opensea.io/collection/mutantsvsmachines"
+  },
+  {
+    title: "Jungle Bay",
+    imageUrl: "/images/JungleBay.png",
+    link: "https://junglebayisland.com/"
+  },
+  {
+    title: "Project EVE",
+    imageUrl: "/images/EVE.png",
+    link: "https://projecteve.io/"
+  }
+];
+
 type Slide = {
   title: string;
   imageUrl: string;
@@ -10,14 +48,10 @@ type Slide = {
   description?: string;
 };
 
-type EmblaCarouselProps = {
-  slides: Slide[];
-};
-
-export const EmblaCarouselComponent: React.FC<EmblaCarouselProps> = ({ slides }) => {
+export const EmblaCarouselComponent: React.FC = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
-    dragFree: false,
+    dragFree: true,
     align: 'start',
   });
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -47,7 +81,7 @@ export const EmblaCarouselComponent: React.FC<EmblaCarouselProps> = ({ slides })
   const handleSlideClick = (e: React.MouseEvent, link: string) => {
     e.preventDefault();
     const clickDuration = Date.now() - (mouseDownTimeRef.current || 0);
-    if (emblaApi && (emblaApi.clickAllowed() || clickDuration < 200)) {
+    if (emblaApi && (emblaApi.clickAllowed() || clickDuration < 600)) {
       window.open(link, '_blank', 'noopener,noreferrer');
     }
   };
@@ -62,7 +96,7 @@ export const EmblaCarouselComponent: React.FC<EmblaCarouselProps> = ({ slides })
   return (
     <div className={styles.embla} ref={emblaRef}>
       <div className={styles.embla__container}>
-        {slides.map((slide, index) => (
+      {slidesData.map((slide, index) => (
           <div 
             key={index} 
             className={`${styles.embla__slide} ${index === selectedIndex ? styles['embla__slide--selected'] : ''}`}

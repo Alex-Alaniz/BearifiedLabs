@@ -1,47 +1,9 @@
 import { ConnectWallet } from "@thirdweb-dev/react";  
 import styles from "../styles/Home.module.css";
-import emblaStyles from "../Components/EmblaCarousel.module.css"; // Importing Embla styles
+import emblaStyles from "../components/EmblaCarousel.module.css"; // Importing Embla styles
 import Image from "next/image";
 import { NextPage } from "next";
-import { EmblaCarouselComponent } from '../Components/EmblaCarouselComponent';
-
-const slidesData = [
-  {
-    title: "BearifiedCo",
-    imageUrl: "/images/bearifiedco.png",
-    link: "https://Bearified.co/"
-  },
-  {
-    title: "OBYC Labs (No Rug Studio)",
-    imageUrl: "/images/OBYCLabs.png",
-    link: "https://obyclabs.com/"
-  },
-  {
-    title: "Okay Bears Yacht Club™",
-    imageUrl: "/images/OBYC.png",
-    link: "https://opensea.io/collection/okaybearsyachtclub"
-  },
-  {
-    title: "OBYC Hazmat Division",
-    imageUrl: "/images/OBYCHazmat.png",
-    link: "https://opensea.io/collection/obyc-hazmat-division"
-  },
-  {
-    title: "Mutants vs Machines",
-    imageUrl: "/images/MvM.png",
-    link: "https://opensea.io/collection/mutantsvsmachines"
-  },
-  {
-    title: "Jungle Bay",
-    imageUrl: "/images/JungleBay.png",
-    link: "https://junglebayisland.com/"
-  },
-  {
-    title: "Project EVE",
-    imageUrl: "/images/EVE.png",
-    link: "https://projecteve.io/"
-  }
-];
+import { EmblaCarouselComponent } from '../components/EmblaCarouselComponent';
 
 const Home: NextPage = () => {
   return (
@@ -203,7 +165,7 @@ const Home: NextPage = () => {
     <section className={styles.projects} id="projects">
       <h2 className={styles.centeredText}>Our Projects</h2>
       <div className={emblaStyles.embla}>
-        <EmblaCarouselComponent slides={slidesData} />
+        <EmblaCarouselComponent />
       </div>
     </section>
 

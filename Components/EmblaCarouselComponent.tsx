@@ -3,50 +3,57 @@ import { useEmblaCarousel } from 'embla-carousel/react';
 import Image from 'next/image';
 import styles from './EmblaCarousel.module.css';
 
-const slidesData = [
-  {
-    title: "BearifiedCo",
-    imageUrl: "/images/bearifiedco.png",
-    link: "https://Bearified.co/"
-  },
-  {
-    title: "OBYC Labs (No Rug Studio)",
-    imageUrl: "/images/OBYCLabs.png",
-    link: "https://obyclabs.com/"
-  },
-  {
-    title: "Okay Bears Yacht Club™",
-    imageUrl: "/images/OBYC.png",
-    link: "https://opensea.io/collection/okaybearsyachtclub"
-  },
-  {
-    title: "OBYC Hazmat Division",
-    imageUrl: "/images/OBYCHazmat.png",
-    link: "https://opensea.io/collection/obyc-hazmat-division"
-  },
-  {
-    title: "Mutants vs Machines",
-    imageUrl: "/images/MvM.png",
-    link: "https://opensea.io/collection/mutantsvsmachines"
-  },
-  {
-    title: "Jungle Bay",
-    imageUrl: "/images/JungleBay.png",
-    link: "https://junglebayisland.com/"
-  },
-  {
-    title: "Project EVE",
-    imageUrl: "/images/EVE.png",
-    link: "https://projecteve.io/"
-  }
-];
-
 type Slide = {
   title: string;
   imageUrl: string;
   link: string;
-  description?: string;
+  description: string;
 };
+
+const slidesData = [
+  {
+    title: "BearifiedCo",
+    imageUrl: "/images/bearifiedco.png",
+    link: "https://Bearified.co/",
+    description: "Description goes here"
+  },
+  {
+    title: "OBYC Labs (No Rug Studio)",
+    imageUrl: "/images/OBYCLabs.png",
+    link: "https://obyclabs.com/",
+    description: "Description goes here"
+  },
+  {
+    title: "Okay Bears Yacht Club™",
+    imageUrl: "/images/OBYC.png",
+    link: "https://opensea.io/collection/okaybearsyachtclub",
+    description: "Description goes here"
+  },
+  {
+    title: "OBYC Hazmat Division",
+    imageUrl: "/images/OBYCHazmat.png",
+    link: "https://opensea.io/collection/obyc-hazmat-division",
+    description: "Description goes here"
+  },
+  {
+    title: "Mutants vs Machines",
+    imageUrl: "/images/MvM.png",
+    link: "https://opensea.io/collection/mutantsvsmachines",
+    description: "Description goes here"
+  },
+  {
+    title: "Jungle Bay",
+    imageUrl: "/images/JungleBay.png",
+    link: "https://junglebayisland.com/",
+    description: "Description goes here"
+  },
+  {
+    title: "Project EVE",
+    imageUrl: "/images/EVE.png",
+    link: "https://projecteve.io/",
+    description: "Description goes here"
+  }
+];
 
 export const EmblaCarouselComponent: React.FC = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({

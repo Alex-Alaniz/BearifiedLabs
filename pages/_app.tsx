@@ -3,7 +3,7 @@ import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { useEffect } from 'react';
 import styles from '../styles/Home.module.css';
 import "../styles/globals.css";
-import Footer from '../components/Footer.tsx'; // Import the Footer component
+import Footer from '../components/Footer'; // Import the Footer component
 
 const activeChain = "ethereum";
 

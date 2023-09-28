@@ -65,6 +65,7 @@ export const EmblaCarouselComponent: React.FC = () => {
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
   const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
   const mouseDownTimeRef = useRef<number | null>(null);
+  const [mouseDownPos, setMouseDownPos] = useState<{ x: number, y: number } | null>(null);
 
   const onSelect = () => {
     if (!emblaApi) return;
@@ -81,15 +82,21 @@ export const EmblaCarouselComponent: React.FC = () => {
     if (emblaApi) emblaApi.scrollNext();
   };
 
-  const handleMouseDown = () => {
+  const handleMouseDown = (e: React.MouseEvent) => {
     mouseDownTimeRef.current = Date.now();
+    setMouseDownPos({ x: e.clientX, y: e.clientY });
   };
 
   const handleSlideClick = (e: React.MouseEvent, link: string) => {
     e.preventDefault();
     const clickDuration = Date.now() - (mouseDownTimeRef.current || 0);
-    if (emblaApi && (emblaApi.clickAllowed() || clickDuration < 600)) {
-      window.open(link, '_blank', 'noopener,noreferrer');
+    const mouseUpPos = { x: e.clientX, y: e.clientY };
+
+    // Check if mouse has moved significantly
+    if (mouseDownPos && (Math.abs(mouseDownPos.x - mouseUpPos.x) < 10 && Math.abs(mouseDownPos.y - mouseUpPos.y) < 10)) {
+      if (emblaApi && (emblaApi.clickAllowed() || clickDuration < 600)) {
+        window.open(link, '_blank', 'noopener,noreferrer');
+      }
     }
   };
 
@@ -103,7 +110,7 @@ export const EmblaCarouselComponent: React.FC = () => {
   return (
     <div className={styles.embla} ref={emblaRef}>
       <div className={styles.embla__container}>
-      {slidesData.map((slide, index) => (
+        {slidesData.map((slide, index) => (
           <div 
             key={index} 
             className={`${styles.embla__slide} ${index === selectedIndex ? styles['embla__slide--selected'] : ''}`}

@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 import emblaStyles from "../components/EmblaCarousel.module.css"; // Importing Embla styles
 import Image from "next/image";
 import { NextPage } from "next";
-import { EmblaCarouselComponent } from '../components/EmblaCarouselComponent';
+import { EmblaCarouselComponent } from '../Components/EmblaCarouselComponent';
 
 const Home: NextPage = () => {
   return (

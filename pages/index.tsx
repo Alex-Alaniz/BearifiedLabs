@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         {/* Navigation */}
         <nav className={styles.nav}>
-          <nav className={styles.gradientText0}>Bearified XYZ</nav>
+          <nav className={styles.gradientText1}>Bearified XYZ</nav>
           <ul className={styles.menu}>
             <li><a href="#hero">Home</a></li>
             <li><a href="#services">Services</a></li>
@@ -29,10 +29,10 @@ const Home: NextPage = () => {
         </nav>
 
         {/* Hero Section */}
-        <div className={styles.hero}>
+        <div className={styles.hero} id="hero">
           <h1 className={styles.heroTitle}>
             Welcome to{" "}
-            <span className={styles.gradientText0}>
+            <span className={styles.gradientText2}>
               <a
                 href="https://thirdweb.com/"
                 target="_blank"
@@ -169,19 +169,6 @@ const Home: NextPage = () => {
       </div>
     </section>
 
-        {/* Testimonials Section */}
-        <section className={styles.testimonials} id="testimonials">
-          <h2>What Our Clients Say</h2>
-          <blockquote>
-          &apos;Bearified Labs provided exceptional service and expertise for our blockchain project. Highly recommended!&apos;
-            <cite>- Satisfied Client</cite>
-          </blockquote>
-          <blockquote>
-          &apos;Their team was professional, knowledgeable, and went above and beyond to ensure our project&apos;s success.&apos;
-            <cite>- Happy Partner</cite>
-          </blockquote>
-        </section>
-
         {/* Team Section */}
 <section className={styles.team} id="team">
     <h2 className={styles.centeredText}>Our Team</h2>
@@ -249,6 +236,24 @@ const Home: NextPage = () => {
             <a href="https://x.com/chasewayt" target="_blank" rel="noopener noreferrer">Socials</a>
         </div>
     </div>
+    <div></div>
+
+            {/* Testimonials Section */}
+            <section className={styles.testimonials} id="testimonials">
+          <h2 className={styles.centeredText}> What Our Clients Say</h2>
+          <blockquote>
+          &apos;Bearified Labs provided exceptional service and expertise for our blockchain project. Highly recommended!&apos;
+            <cite>- Satisfied Client</cite>
+          </blockquote>
+          <blockquote>
+          &apos;Their team was professional, knowledgeable, and went above and beyond to ensure our project&apos;s success.&apos;
+            <cite>- Happy Partner</cite>
+          </blockquote>
+        </section>
+
+
+
+    <div></div>
 
 </section>
       </div>

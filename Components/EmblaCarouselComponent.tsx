@@ -15,50 +15,50 @@ const slidesData = [
     title: "BearifiedCo",
     imageUrl: "/images/bearifiedco.png",
     link: "https://Bearified.co/",
-    description: "Description goes here"
+    description: "a Web3 Fashion Brand"
   },
   {
     title: "OBYC Labs (No Rug Studio)",
     imageUrl: "/images/OBYCLabs.png",
     link: "https://obyclabs.com/",
-    description: "Description goes here"
+    description: "OkayBearsYachClub™ & MvM™"
   },
   {
     title: "Okay Bears Yacht Club™",
     imageUrl: "/images/OBYC.png",
     link: "https://opensea.io/collection/okaybearsyachtclub",
-    description: "Description goes here"
+    description: "Bear Themed PFP Collection"
   },
   {
     title: "OBYC Hazmat Division",
     imageUrl: "/images/OBYCHazmat.png",
     link: "https://opensea.io/collection/obyc-hazmat-division",
-    description: "Description goes here"
+    description: "Lab Items for OBYC Bears"
   },
   {
     title: "Mutants vs Machines",
     imageUrl: "/images/MvM.png",
     link: "https://opensea.io/collection/mutantsvsmachines",
-    description: "Description goes here"
+    description: "OBYC Expansion Collection"
   },
   {
     title: "Jungle Bay",
     imageUrl: "/images/JungleBay.png",
     link: "https://junglebayisland.com/",
-    description: "Description goes here"
+    description: "We do what we want"
   },
   {
     title: "Project EVE",
     imageUrl: "/images/EVE.png",
     link: "https://projecteve.io/",
-    description: "Description goes here"
+    description: "Empowering Women to be the Vangaurd of Web3 supported by everyone"
   }
 ];
 
 export const EmblaCarouselComponent: React.FC = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
-    dragFree: true,
+    dragFree: false,
     align: 'start',
   });
   const [selectedIndex, setSelectedIndex] = useState(0);

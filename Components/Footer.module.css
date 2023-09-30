@@ -25,10 +25,12 @@
 .footerCenter ul {
     list-style-type: none;
     padding: 0;
+    display: flex; /* Add this line */
+    gap: 20px; /* Add this line to create some space between the list items */
 }
-  
+
 .footerCenter ul li {
-    margin: 5px 0;
+    margin: 0; /* Update this line */
 }
   
 .footerCenter ul li a {
@@ -40,3 +42,45 @@
 .footerCenter ul li a:hover {
     color: #000000;
 }
+
+/* Gradient Text Styles */
+.gradientText0 {
+    background: -webkit-linear-gradient(#bfa3da, #84309c, #c735b0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .gradientText1 {
+    background: -webkit-linear-gradient(#a79af9, #7aa8d2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .gradientText2 {
+    background: -webkit-linear-gradient(#bfa3da, #743f93);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .gradientText3 {
+    background: -webkit-linear-gradient(#c35ab1, #e9a8d9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Title Styles */
+  .title a:hover, .title a:focus, .title a:active {
+    text-decoration: underline;
+    text-decoration-color: #84309c;
+  }
+
+  .socialIcons {
+    display: flex;
+    gap: 10px; /* Adjust the gap between icons as needed */
+  }
+  
+  

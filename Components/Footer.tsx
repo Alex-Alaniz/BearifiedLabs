@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
         </ul>
       </div>
       <div className={styles.footerRight}>
-        <p>Follow us on:</p>
+        <p>Lets connect 🤝  </p>
         <div className={styles.socialIcons}>
         <a href="https://twitter.com/BearifiedXYZ" target="_blank" rel="noopener noreferrer">
   <Image src="/images/X.png" alt="X" width={24} height={24} />

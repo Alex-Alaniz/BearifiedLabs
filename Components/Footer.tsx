@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
         <p>Lets connect 🤝  </p>
         <div className={styles.socialIcons}>
         <a href="https://twitter.com/BearifiedXYZ" target="_blank" rel="noopener noreferrer">
-  <Image src="/images/X.png" alt="X" width={24} height={24} />
+  <Image src="/images/x.png" alt="X" width={24} height={24} />
   </a>
   <a href="https://www.instagram.com/bearifiedxyz/" target="_blank" rel="noopener noreferrer">
   <Image src="/images/instagram.png" alt="Instagram" width={24} height={24} />

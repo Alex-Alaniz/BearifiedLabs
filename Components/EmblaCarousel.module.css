@@ -1,12 +1,12 @@
 .embla {
   width: 100%;
-  overflow: hidden;
+  overflow: scroll;
   position: relative;
 }
 
 .embla__container {
   padding: 0;
-  width: 100%;
+  width: 33.33%;
   display: flex;
   gap: 10px;
 }
@@ -55,23 +55,23 @@
 }
 
 .embla__button_prev {
-  left: 10px;
+  left: 50px;
 }
 
 .embla__button_next {
-  right: 10px;
+  right: 30px;
 }
 
 .embla__button_prev:hover,
 .embla__button_next:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 @media screen and (min-width: 768px) {
   .embla__slide {
-    width: calc(33.33% - 10px); /* Display 3 slides on desktop, minus the gap */
+    width: calc(50% - 10px); /* Display 3 slides on desktop, minus the gap */
     flex: 0 0 calc(33.33% - 10px);
-    margin-right: -69%;
+    margin-right: auto;
     margin-left: auto;
   }
 }

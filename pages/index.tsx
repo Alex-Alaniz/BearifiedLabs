@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         {/* Navigation */}
         <nav className={styles.nav}>
-          <nav className={styles.gradientText1}>Bearified XYZ</nav>
+          <h1 className={styles.gradientText1}>Bearified XYZ</h1>
           <ul className={styles.menu}>
             <li><a href="#hero">Home</a></li>
             <li><a href="#services">Services</a></li>
@@ -27,6 +27,10 @@ const Home: NextPage = () => {
             }}
           />
         </nav>
+        <div></div>
+        "Space"
+        <div></div>
+        <div></div>
 
         {/* Hero Section */}
         <div className={styles.hero} id="hero">

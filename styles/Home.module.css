@@ -310,6 +310,7 @@
 }
 
 .hero {
+  margin-top: 60px; /* Adjust this value based on the actual height of your navigation bar */
   padding-top: 70px; /* Adjust this value based on the actual height of your navigation bar */
   /* ... other styles ... */
 }

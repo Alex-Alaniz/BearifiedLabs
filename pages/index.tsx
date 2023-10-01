@@ -28,9 +28,6 @@ const Home: NextPage = () => {
           />
         </nav>
         <div></div>
-        {' '}
-        <div></div>
-        <div></div>
 
         {/* Hero Section */}
         <div className={styles.hero} id="hero">
@@ -38,7 +35,7 @@ const Home: NextPage = () => {
             Welcome to{" "}
             <span className={styles.gradientText2}>
               <a
-                href="https://thirdweb.com/"
+                href="https://bearified.xyz/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

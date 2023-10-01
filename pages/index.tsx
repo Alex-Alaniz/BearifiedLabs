@@ -178,8 +178,8 @@ const Home: NextPage = () => {
                 <Image
                     src="https://ipfs.io/ipfs/QmbpbVgkSyTvZFyNjHi5YNW8YuHXyWqha8pKJME7mf4xbF/New%20Alex%20Avatar.JPG"
                     alt="devAlex.ᴱᵀᴴ| ᵍᵐ"
-                    width={150}
-                    height={150}
+                    width={100}
+                    height={100}
                 />
             </div>
             <h3>devAlex.ᴱᵀᴴ| ᵍᵐ</h3>
@@ -200,10 +200,7 @@ const Home: NextPage = () => {
             </div>
             <h3>ApeWhaleNFT.ᴱᵀᴴ</h3>
             <p>Advisor</p>
-            <a href="https://x.com/obycduke" target="_blank" rel="noopener noreferrer">
-            <Image src="/images/x.png" alt="X Social Icon" width={24} height={24} />
-                  {/* Add more icons as needed */}
-</a>
+            <a href="https://twitter.com/ApewhaleNFT" target="_blank" rel="noopener noreferrer">𝕏</a>
         </div>
     </div>
 
@@ -220,10 +217,7 @@ const Home: NextPage = () => {
             </div>
             <h3>ImM0RTaL_DuKE.ᴱᵀᴴ</h3>
             <p>DIT - Dev in Training</p>
-            <a href="https://x.com/obycduke" target="_blank" rel="noopener noreferrer">
-    <Image src="/images/x.png" alt="X" width={24} height={24} className={styles.socialIcon} />
-    {/* Add more icons as needed */}
-</a>
+            <a href="https://x.com/OBYCDuke" target="_blank" rel="noopener noreferrer">𝕏</a>
         </div>
     </div>
 
@@ -239,7 +233,7 @@ const Home: NextPage = () => {
             </div>
             <h3>WavyWayt.ᴱᵀᴴ</h3>
             <p>Account Manager</p>
-            <a href="https://x.com/chasewayt" target="_blank" rel="noopener noreferrer">Socials</a>
+            <a href="https://x.com/chasewayt" target="_blank" rel="noopener noreferrer">𝕏</a>
         </div>
     </div>
     <div></div>

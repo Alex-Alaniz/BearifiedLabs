@@ -22,16 +22,16 @@ const Footer: React.FC = () => {
         <p>Lets connect 🤝  </p>
         <div className={styles.socialIcons}>
         <a href="https://twitter.com/BearifiedXYZ" target="_blank" rel="noopener noreferrer">
-  <Image src="/images/x.png" alt="X" width={24} height={24} />
-  </a>
-  <a href="https://www.instagram.com/bearifiedxyz/" target="_blank" rel="noopener noreferrer">
-  <Image src="/images/instagram.png" alt="Instagram" width={24} height={24} />
-  </a>
-  <a href="https://discord.gg/aK76shw3w3" target="_blank" rel="noopener noreferrer">
-    <Image src="/images/discord.png" alt="Discord" width={24} height={24} />
-  </a>
-  {/* Add more icons similarly */}
-</div>
+        <Image src="/images/x.png" alt="X" width={24} height={24} />
+        </a>
+        <a href="https://www.instagram.com/bearifiedxyz/" target="_blank" rel="noopener noreferrer">
+        <Image src="/images/instagram.png" alt="Instagram" width={24} height={24} />
+        </a>
+        <a href="https://discord.gg/aK76shw3w3" target="_blank" rel="noopener noreferrer">
+       <Image src="/images/discord.png" alt="Discord" width={24} height={24} />
+       </a>
+       {/* Add more icons similarly */}
+      </div>
 
         {/* Add your social media icons here */}
       </div>

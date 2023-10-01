@@ -11,6 +11,15 @@
   gap: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .embla__container {
+    width: 100%; /* Display 1 slide on mobile */
+    flex: 0 0 100%;
+    position: relative;
+    padding: auto;
+  }
+}
+
 .embla__slide {
   margin: 0;
   position: relative;
@@ -76,7 +85,7 @@
   }
 }
 
-@@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .embla__slide {
     width: 100%; /* Display 1 slide on mobile */
     flex: 0 0 100%;

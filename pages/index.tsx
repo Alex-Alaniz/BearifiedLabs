@@ -200,7 +200,10 @@ const Home: NextPage = () => {
             </div>
             <h3>ApeWhaleNFT.ᴱᵀᴴ</h3>
             <p>Advisor</p>
-            <a href="https://x.com/obycduke" target="_blank" rel="noopener noreferrer">Socials</a>
+            <a href="https://x.com/obycduke" target="_blank" rel="noopener noreferrer">
+            <Image src="/images/x.png" alt="X Social Icon" width={24} height={24} />
+                  {/* Add more icons as needed */}
+</a>
         </div>
     </div>
 
@@ -217,7 +220,10 @@ const Home: NextPage = () => {
             </div>
             <h3>ImM0RTaL_DuKE.ᴱᵀᴴ</h3>
             <p>DIT - Dev in Training</p>
-            <a href="https://x.com/obycduke" target="_blank" rel="noopener noreferrer">Socials</a>
+            <a href="https://x.com/obycduke" target="_blank" rel="noopener noreferrer">
+    <Image src="/images/x.png" alt="X" width={24} height={24} className={styles.socialIcon} />
+    {/* Add more icons as needed */}
+</a>
         </div>
     </div>
 

@@ -32,6 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       activeChain={activeChain}
     >
       <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>BearifiedXYZ</title>
         <meta name="description" content="A Web3 Agency: Powering dreams for Developers Artist & CreatorsStep into the NFT universe with us. We navigate the intricate maze of smart contracts and provide a robust Web3 drop platform. You bring the creativity, we handle the code. When our worlds collide, expect digital fireworks." />
         <meta property="og:type" content="website" />

@@ -28,7 +28,7 @@ const Home: NextPage = () => {
           />
         </nav>
         <div></div>
-        "Space"
+        {' '}
         <div></div>
         <div></div>
 

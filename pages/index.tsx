@@ -250,9 +250,6 @@ const Home: NextPage = () => {
             <cite>- Happy Partner</cite>
           </blockquote>
         </section>
-
-
-
     <div></div>
 
 </section>

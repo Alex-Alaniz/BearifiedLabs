@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footerCenter}>
       <div className={styles.footerLeft}>
       <nav className={styles.gradientText1}>Bearified XYZ</nav>
         <p>A web3 Agency</p>
@@ -15,11 +15,11 @@ const Footer: React.FC = () => {
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
         </ul>
-      </div>
-      <div className={styles.footerRight}>
-        <p>Lets connect 🤝  </p>
+        <div></div>
+        </div>
+      <div className={styles.footerLeft}>
+        <h4>Lets connect 🤝 </h4>
         <div className={styles.socialIcons}>
         <a href="https://twitter.com/BearifiedXYZ" target="_blank" rel="noopener noreferrer">
         <Image src="/images/x.png" alt="X" width={24} height={24} />
@@ -33,7 +33,6 @@ const Footer: React.FC = () => {
        {/* Add more icons similarly */}
       </div>
 
-        {/* Add your social media icons here */}
       </div>
     </footer>
   );

@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import styles from '../styles/Home.module.css';
 import "../styles/globals.css";
 import Footer from '../Components/Footer'; // Import the Footer component
+import Head from 'next/head'; // <-- Import the Head component
 
 const activeChain = "ethereum";
 
@@ -30,6 +31,20 @@ function MyApp({ Component, pageProps }: AppProps) {
       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
       activeChain={activeChain}
     >
+      <Head>
+        <title>BearifiedXYZ</title>
+        <meta name="description" content="A Web3 Agency: Powering dreams for Developers Artist & CreatorsStep into the NFT universe with us. We navigate the intricate maze of smart contracts and provide a robust Web3 drop platform. You bring the creativity, we handle the code. When our worlds collide, expect digital fireworks." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.Bearified.xyz/" />
+        <meta property="og:title" content="BearifiedXYZ" />
+        <meta property="og:description" content="A Web3 Agency: Powering dreams for Developers Artist & CreatorsStep into the NFT universe with us. We navigate the intricate maze of smart contracts and provide a robust Web3 drop platform. You bring the creativity, we handle the code. When our worlds collide, expect digital fireworks." />
+        <meta property="og:image" content="images/BearifiedXYZ.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.Bearified.xyz/" />
+        <meta property="twitter:title" content="BearifiedXYZ" />
+        <meta property="twitter:description" content="A Web3 Agency: Powering dreams for Developers Artist & CreatorsStep into the NFT universe with us. We navigate the intricate maze of smart contracts and provide a robust Web3 drop platform. You bring the creativity, we handle the code. When our worlds collide, expect digital fireworks." />
+        <meta property="twitter:image" content="images/BearifiedXYZ.png" />
+      </Head>
       <nav className={styles.nav}>
         <ul className={styles.menu}>
           <li><a href="#hero" data-target="hero">Home</a></li>

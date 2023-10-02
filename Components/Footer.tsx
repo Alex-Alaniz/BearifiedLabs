@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <footer className={styles.footerCenter}>
       <div className={styles.footerLeft}>
       <nav className={styles.gradientText1}>Bearified XYZ</nav>
-        <p>A web3 Agency</p>
+        <p>A Web3 Company</p>
       </div>
       <div className={styles.footerCenter}>
         <ul>

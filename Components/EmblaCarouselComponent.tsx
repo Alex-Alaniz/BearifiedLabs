@@ -12,22 +12,22 @@ type Slide = {
 
 const slidesData = [
   {
-    title: "BearifiedCo",
-    imageUrl: "/images/bearifiedco.png",
-    link: "https://Bearified.co/",
-    description: "a Web3 Fashion Brand"
-  },
-  {
-    title: "OBYC Labs (No Rug Studio)",
-    imageUrl: "/images/OBYCLabs.png",
-    link: "https://obyclabs.com/",
-    description: "OkayBearsYachClub™ & MvM™"
+    title: "Jungle Bay",
+    imageUrl: "/images/JungleBay.png",
+    link: "https://junglebayisland.com/",
+    description: "We do what we want"
   },
   {
     title: "Okay Bears Yacht Club™",
     imageUrl: "/images/OBYC.png",
     link: "https://opensea.io/collection/okaybearsyachtclub",
     description: "Bear Themed PFP Collection"
+  },
+  {
+    title: "OBYC Labs (No Rug Studio)",
+    imageUrl: "/images/OBYCLabs.png",
+    link: "https://obyclabs.com/",
+    description: "OkayBearsYachClub™ & MvM™"
   },
   {
     title: "OBYC Hazmat Division",
@@ -42,16 +42,28 @@ const slidesData = [
     description: "OBYC Expansion Collection"
   },
   {
-    title: "Jungle Bay",
-    imageUrl: "/images/JungleBay.png",
-    link: "https://junglebayisland.com/",
-    description: "We do what we want"
-  },
-  {
     title: "Project EVE",
     imageUrl: "/images/EVE.png",
     link: "https://projecteve.io/",
     description: "Empowering Women to be the Vangaurd of Web3 supported by everyone"
+  },
+  {
+    title: "BearifiedCo",
+    imageUrl: "/images/bearifiedco.png",
+    link: "https://Bearified.co/",
+    description: "a Web3 Fashion Brand"
+  },
+  {
+    title: "Pepe Ape Yacht Club",
+    imageUrl: "/images/payc.jpeg",
+    link: "https://pepeapeyachtclub.com/",
+    description: "Building the largest meme community in web3 CC0 #PAYC $SHS $SHEESH"
+  },
+  {
+    title: "MetaRebelz",
+    imageUrl: "/images/MetaRebelz.jpeg",
+    link: "https://www.metarebelz.io/",
+    description: "A collection of 8,500 Meta Rebelz NFTs — Digital collectibles living on the Ethereum blockchain."
   }
 ];
 

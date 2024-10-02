@@ -49,7 +49,7 @@ const Home: NextPage = () => {
             <code className={styles.code}>Developers</code>{" "}
             <code className={styles.code}>Artist</code> & {""}
             <code className={styles.code}>Creators</code> 
-            Step into the NFT universe with us. We navigate the intricate maze of smart contracts and provide a robust Web3 drop platform. You bring the creativity, we handle the code. When our worlds collide, expect digital fireworks.
+            Step into the MemeCoins & NFT universe with us. We navigate the intricate maze of smart contracts and provide a robust Web3 drop platform. You bring the creativity, we handle the code. When our worlds collide, expect digital fireworks.
           </p>
         </div>
 

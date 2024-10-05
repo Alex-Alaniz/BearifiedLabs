@@ -249,7 +249,7 @@ const Home: NextPage = () => {
             </div>
             <h3>David Fernando</h3>
             <p>Project Manager</p> 
-            <a href="mailto:info@bearified.xyz" target="_blank" rel="noopener noreferrer">Contact</a>
+            <a href="mailto:dtorresd@web.de" target="_blank" rel="noopener noreferrer">Contact</a>
         </div>
     </div>
     <div></div>

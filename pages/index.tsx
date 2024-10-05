@@ -184,7 +184,7 @@ const Home: NextPage = () => {
                 />
             </div>
             <h3>devAlex.ᴱᵀᴴ| ᵍᵐ</h3>
-            <p>Dev</p>
+            <p>Founder & SWE</p>
             <a href="https://alexalaniz.com" target="_blank" rel="noopener noreferrer">Visit Website</a>
         </div>
     </div>
@@ -205,7 +205,6 @@ const Home: NextPage = () => {
         </div>
     </div>
 
-
     <div className={styles.teamContainer}>
         <div className={styles.card}>
             <div className={styles.teamImage}>
@@ -217,7 +216,7 @@ const Home: NextPage = () => {
                 />
             </div>
             <h3>ImM0RTaL_DuKE.ᴱᵀᴴ</h3>
-            <p>DIT - Dev in Training</p>
+            <p>Customer Relations</p>
             <a href="https://x.com/OBYCDuke" target="_blank" rel="noopener noreferrer">𝕏</a>
         </div>
     </div>
@@ -235,6 +234,22 @@ const Home: NextPage = () => {
             <h3>WavyWayt.ᴱᵀᴴ</h3>
             <p>Account Manager</p>
             <a href="https://x.com/chasewayt" target="_blank" rel="noopener noreferrer">𝕏</a>
+        </div>
+    </div>
+
+    <div className={styles.teamContainer}>
+        <div className={styles.card}>
+            <div className={styles.teamImage}>
+                <Image
+                    src="/images/dft.jpg" // Replace with the actual image URL
+                    alt="David Fernando"
+                    width={150}
+                    height={150}
+                />
+            </div>
+            <h3>David Fernando</h3>
+            <p>Project Manager</p> 
+            <a href="mailto:info@bearified.xyz" target="_blank" rel="noopener noreferrer">Contact</a>
         </div>
     </div>
     <div></div>

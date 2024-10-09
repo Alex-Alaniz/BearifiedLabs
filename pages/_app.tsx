@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     >
       <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>BearifiedXYZ</title>
+        <title>BearifiedCo</title>
         <meta name="description" content="A Web3 Agency: Powering dreams for Developers Artist & Creators." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.Bearified.xyz/" />

@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         {/* Navigation */}
         <nav className={styles.nav}>
-          <h1 className={styles.gradientText1}>Bearified XYZ</h1>
+          <h1 className={styles.gradientText1}>BearifiedCo</h1>
           <ul className={styles.menu}>
             <li><a href="#hero">Home</a></li>
             <li><a href="#services">Services</a></li>

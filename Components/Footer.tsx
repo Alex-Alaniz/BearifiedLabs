@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <footer className={styles.footerCenter}>
       <div className={styles.footerLeft}>
-      <nav className={styles.gradientText1}>Bearified XYZ</nav>
+      <nav className={styles.gradientText1}>BearifiedCo</nav>
         <p>A Web3 Company</p>
       </div>
       <div className={styles.footerCenter}>

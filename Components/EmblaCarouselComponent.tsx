@@ -12,58 +12,64 @@ type Slide = {
 
 const slidesData = [
   {
-    title: "Jungle Bay",
+    title: "Jungle Bay (jmGPT)",
     imageUrl: "/images/JungleBay.png",
     link: "https://junglebayisland.com/",
     description: "We do what we want"
   },
   {
-    title: "Okay Bears Yacht Club™",
+    title: "Okay Bears Yacht Club™ (Advisors)",
     imageUrl: "/images/OBYC.png",
     link: "https://opensea.io/collection/okaybearsyachtclub",
     description: "Bear Themed PFP Collection"
   },
   {
-    title: "OBYC Labs (No Rug Studio)",
+    title: "OBYC Labs (No Rug Studio) (Advisors)",
     imageUrl: "/images/OBYCLabs.png",
     link: "https://obyclabs.com/",
     description: "OkayBearsYachClub™ & MvM™"
   },
   {
-    title: "OBYC Hazmat Division",
+    title: "OBYC Hazmat Division (Advisors)",
     imageUrl: "/images/OBYCHazmat.png",
     link: "https://opensea.io/collection/obyc-hazmat-division",
     description: "Lab Items for OBYC Bears"
   },
   {
-    title: "Mutants vs Machines",
+    title: "Mutants vs Machines (Advisors)",
     imageUrl: "/images/MvM.png",
     link: "https://opensea.io/collection/mutantsvsmachines",
     description: "OBYC Expansion Collection"
   },
   {
-    title: "Project EVE",
+    title: "Project EVE (Advisors)",
     imageUrl: "/images/EVE.png",
     link: "https://projecteve.io/",
     description: "Empowering Women to be the Vangaurd of Web3 supported by everyone"
   },
   {
-    title: "BearifiedCo",
+    title: "BearifiedCo (Clothing)",
     imageUrl: "/images/bearifiedco.png",
     link: "https://Bearified.co/",
     description: "a Web3 Fashion Brand"
   },
   {
-    title: "Pepe Ape Yacht Club",
+    title: "PepeApeYachtClub (Abandoned)",
     imageUrl: "/images/payc.jpeg",
     link: "https://pepeapeyachtclub.com/",
-    description: "Building the largest meme community in web3 CC0 #PAYC $SHS $SHEESH"
+    description: "Building the largest meme community in web3 CC0 #PAYC $SHS $SHEESH (CC0) CTO (Community Takeover)"
   },
   {
-    title: "MetaRebelz",
+    title: "MetaRebelz (Advisors)",
     imageUrl: "/images/MetaRebelz.jpeg",
     link: "https://www.metarebelz.io/",
     description: "A collection of 8,500 Meta Rebelz NFTs — Digital collectibles living on the Ethereum blockchain."
+  },
+  {
+    title: "Ale𝕏 Alaniz Portfolio Founder & SWE",
+    imageUrl: "https://ipfs.io/ipfs/QmbpbVgkSyTvZFyNjHi5YNW8YuHXyWqha8pKJME7mf4xbF/New%20Alex%20Avatar.JPG",
+    link: "https://www.alexalaniz.com/",
+    description: "Personal Portfolio Website."
   }
 ];
 
